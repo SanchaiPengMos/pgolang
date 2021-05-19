@@ -1,27 +1,32 @@
 package main
 
-import "fmt"
+import (
+	"fmt"	
+	"math"
+)
+
 
 func main() {
 
-	fmt.Println("You want know about??")
+		var number int
+		var x float64
+		var y float64
+		var z float64
 
-	var About string
-	fmt.Scanf("%s", &About)
+		fmt.Scan(&number)
 
-	if About == "yes" {
-		var Speed int
-		var time int
+		y = math.Sin(float64(number))
+		x = math.Cos(float64(number))
+		x = math.Tan(float64(number))
 
-		fmt.Println("Your speed (Km/hr)")
-		fmt.Scan(&Speed)
-		fmt.Println("Speed", Speed)
 
-		fmt.Println("Your time (Km/hr)")
-		fmt.Scan(&time)
+		fmt.Println( "Value Sin",y)
+		fmt.Println( "Value Cos",x)
+		fmt.Println( "Value tan",z)
 
-		fmt.Println("time", time)
+		fmt.Println("Value Sin", math.Sin(float64(number)*math.Pi/180))
 
-		fmt.Println("ความเร็ว", Speed*time)
-	}
+	
+
 }
+
